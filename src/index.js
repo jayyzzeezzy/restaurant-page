@@ -1,4 +1,5 @@
 import makeHomePage from './homepage'; 
+import makeMenuPage from './menu';
 
 // make navbar function
 function makeNavBar() {
@@ -27,13 +28,18 @@ function handleNavClicks() {
 
     navBtn.forEach((button) => {
         button.addEventListener('click', () => {
-            loadPage();
+            loadPage(button);
         })
     });
 };
 
-function loadPage() {
-    console.log('loadPage executed successfully.');
+function loadPage(button) {
+    if (button.textContent == 'Menu') {
+        makeMenuPage();
+    }
+    else {
+        console.log('no module for this page yet!');
+    }
 };
 
 makeNavBar();
