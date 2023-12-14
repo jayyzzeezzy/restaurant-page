@@ -2,6 +2,7 @@ import makeContactPage from './contact';
 import makeHomePage from './homepage'; 
 import makeMenuPage from './menu';
 
+const content = document.querySelector('#content');
 // make navbar function
 function makeNavBar() {
     const nav = document.querySelector('#nav');
@@ -35,6 +36,7 @@ function handleNavClicks() {
 };
 
 function loadPage(button) {
+    content.textContent = '';
     if (button.textContent == 'Menu') {
         makeMenuPage();
     }
@@ -51,5 +53,4 @@ function loadPage(button) {
 
 makeNavBar();
 handleNavClicks();
-console.log('Executed successfully.');
 makeHomePage();
