@@ -11,8 +11,8 @@ function makeHomePage() {
     picture.src = '../dist/img/pizza-s.jpg';
     picture.alt = 'some context';
 
-    name.textContent = 'Food';
-    description.textContent = 'Food description.';
+    name.textContent = 'Pizza Restaurant';
+    description.textContent = 'Restaurant description.';
 
     content.appendChild(name);
     content.appendChild(picture);

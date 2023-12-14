@@ -10,12 +10,12 @@ function makeMenuPage() {
 
     title.textContent = 'Menu';
     itemOne.classList.add('menu-contain');
-    nameOne.textContent = 'One';
+    nameOne.textContent = 'Pizza One';
     picOne.src = '';
     picOne.alt = 'some text'
 
     itemTwo.classList.add('menu-contain');
-    nameTwo.textContent = 'Two';
+    nameTwo.textContent = 'Pizza Two';
     picTwo.src = '';
     picTwo.alt = 'some text too';
 
