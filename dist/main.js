@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction makeContactPage() {\n    const content = document.querySelector('#content');\n    const contain = document.createElement('div');\n    const title = document.createElement('h1');\n    const phone = document.createElement('p');\n    const email = document.createElement('p');\n\n    title.classList.add('title');\n    phone.classList.add('phone');\n    email.classList.add('email');\n\n    title.textContent = 'Contact';\n    phone.textContent = 'Phone: (123) 456-7890'\n    email.textContent = 'Email: restaurant@gmail.com'\n\n    contain.appendChild(title);\n    contain.appendChild(phone);\n    contain.appendChild(email);\n    content.appendChild(contain);\n\n    return content;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeContactPage);\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/homepage.js":
 /*!*************************!*\
   !*** ./src/homepage.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n \n\n\n// make navbar function\nfunction makeNavBar() {\n    const nav = document.querySelector('#nav');\n    const home = document.createElement('button');\n    const menu = document.createElement('button');\n    const contact = document.createElement('button');\n\n    home.classList.add('navBtn');\n    menu.classList.add('navBtn');\n    contact.classList.add('navBtn');\n\n    home.textContent = 'Home';\n    menu.textContent = 'Menu';\n    contact.textContent = 'Contact';\n\n    nav.appendChild(home);\n    nav.appendChild(menu);\n    nav.appendChild(contact);\n\n    return nav;\n};\n\nfunction handleNavClicks() {\n    const navBtn = document.querySelectorAll('.navBtn');\n\n    navBtn.forEach((button) => {\n        button.addEventListener('click', () => {\n            loadPage(button);\n        })\n    });\n};\n\nfunction loadPage(button) {\n    if (button.textContent == 'Menu') {\n        (0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    }\n    else {\n        console.log('no module for this page yet!');\n    }\n};\n\nmakeNavBar();\nhandleNavClicks();\nconsole.log('Executed successfully.');\n(0,_homepage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n \n\n\n// make navbar function\nfunction makeNavBar() {\n    const nav = document.querySelector('#nav');\n    const home = document.createElement('button');\n    const menu = document.createElement('button');\n    const contact = document.createElement('button');\n\n    home.classList.add('navBtn');\n    menu.classList.add('navBtn');\n    contact.classList.add('navBtn');\n\n    home.textContent = 'Home';\n    menu.textContent = 'Menu';\n    contact.textContent = 'Contact';\n\n    nav.appendChild(home);\n    nav.appendChild(menu);\n    nav.appendChild(contact);\n\n    return nav;\n};\n\nfunction handleNavClicks() {\n    const navBtn = document.querySelectorAll('.navBtn');\n\n    navBtn.forEach((button) => {\n        button.addEventListener('click', () => {\n            loadPage(button);\n        })\n    });\n};\n\nfunction loadPage(button) {\n    if (button.textContent == 'Menu') {\n        (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n    }\n    else if (button.textContent == 'Home') {\n        (0,_homepage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    }\n    else if (button.textContent == 'Contact') {\n        (0,_contact__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    }\n    else {\n        alert('Error!');\n    }\n};\n\nmakeNavBar();\nhandleNavClicks();\nconsole.log('Executed successfully.');\n(0,_homepage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 

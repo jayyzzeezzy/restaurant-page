@@ -1,3 +1,4 @@
+import makeContactPage from './contact';
 import makeHomePage from './homepage'; 
 import makeMenuPage from './menu';
 
@@ -37,8 +38,14 @@ function loadPage(button) {
     if (button.textContent == 'Menu') {
         makeMenuPage();
     }
+    else if (button.textContent == 'Home') {
+        makeHomePage();
+    }
+    else if (button.textContent == 'Contact') {
+        makeContactPage();
+    }
     else {
-        console.log('no module for this page yet!');
+        alert('Error!');
     }
 };
 
