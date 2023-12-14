@@ -1,5 +1,5 @@
 import makeContactPage from './contact';
-import makeHomePage from './homepage'; 
+import makeHomePage from './home'; 
 import makeMenuPage from './menu';
 
 const content = document.querySelector('#content');
