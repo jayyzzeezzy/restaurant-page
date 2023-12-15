@@ -1,6 +1,6 @@
-import makeContactPage from './contact';
-import makeHomePage from './home'; 
-import makeMenuPage from './menu';
+import makeContactPage from './pages/contact';
+import makeHomePage from './pages/home'; 
+import makeMenuPage from './pages/menu';
 import './style.css';
 
 const content = document.querySelector('#content');

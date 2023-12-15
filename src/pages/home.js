@@ -1,4 +1,4 @@
-import Pizza from './img/pizza-s.jpg';
+import Pizza from '../img/pizza-s.jpg';
 
 function makeHomePage() {
     const content = document.querySelector('#content');
