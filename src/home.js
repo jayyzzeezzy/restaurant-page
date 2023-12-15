@@ -1,3 +1,5 @@
+import Pizza from './img/pizza-s.jpg';
+
 function makeHomePage() {
     const content = document.querySelector('#content');
     const name = document.createElement('h1');
@@ -8,8 +10,8 @@ function makeHomePage() {
     picture.classList.add('food-pic');
     description.classList.add('food-des');
 
-    picture.src = '../dist/img/pizza-s.jpg';
-    picture.alt = 'some context';
+    picture.src = Pizza;
+    picture.alt = 'a picture of a pizza';
 
     name.textContent = 'Pizza Restaurant';
     description.textContent = 'Restaurant description.';

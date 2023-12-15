@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction makeHomePage() {\n    const content = document.querySelector('#content');\n    const name = document.createElement('h1');\n    const picture = document.createElement('img');\n    const description = document.createElement('p');\n\n    name.classList.add('food-name');\n    picture.classList.add('food-pic');\n    description.classList.add('food-des');\n\n    picture.src = '../dist/img/pizza-s.jpg';\n    picture.alt = 'some context';\n\n    name.textContent = 'Pizza Restaurant';\n    description.textContent = 'Restaurant description.';\n\n    content.appendChild(name);\n    content.appendChild(picture);\n    content.appendChild(description);\n\n    return content;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeHomePage);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_pizza_s_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/pizza-s.jpg */ \"./src/img/pizza-s.jpg\");\n\n\nfunction makeHomePage() {\n    const content = document.querySelector('#content');\n    const name = document.createElement('h1');\n    const picture = document.createElement('img');\n    const description = document.createElement('p');\n\n    name.classList.add('food-name');\n    picture.classList.add('food-pic');\n    description.classList.add('food-des');\n\n    picture.src = _img_pizza_s_jpg__WEBPACK_IMPORTED_MODULE_0__;\n    picture.alt = 'a picture of a pizza';\n\n    name.textContent = 'Pizza Restaurant';\n    description.textContent = 'Restaurant description.';\n\n    content.appendChild(name);\n    content.appendChild(picture);\n    content.appendChild(description);\n\n    return content;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeHomePage);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -147,6 +147,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction makeMenuPage() {\n    const content = document.querySelector('#content');\n    const title = document.createElement('h1');\n    const itemOne = document.createElement('div');\n    const itemTwo = document.createElement('div');\n    const nameOne = document.createElement('h3');\n    const nameTwo = document.createElement('h3');\n    const picOne = document.createElement('img');\n    const picTwo = document.createElement('img');\n\n    title.textContent = 'Menu';\n    itemOne.classList.add('menu-contain');\n    nameOne.textContent = 'Pizza One';\n    picOne.src = '';\n    picOne.alt = 'pizza one picture'\n\n    itemTwo.classList.add('menu-contain');\n    nameTwo.textContent = 'Pizza Two';\n    picTwo.src = '';\n    picTwo.alt = 'pizza two picture';\n\n    itemOne.appendChild(nameOne);\n    itemOne.appendChild(picOne);\n    itemTwo.appendChild(nameTwo);\n    itemTwo.appendChild(picTwo);\n    content.appendChild(itemOne);\n    content.appendChild(itemTwo);\n    \n    return content;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeMenuPage);\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/img/pizza-s.jpg":
+/*!*****************************!*\
+  !*** ./src/img/pizza-s.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e5d7e1e93f20c2089a4e.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/pizza-s.jpg?");
 
 /***/ })
 
@@ -201,6 +211,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +237,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
