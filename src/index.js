@@ -1,6 +1,7 @@
 import makeContactPage from './contact';
 import makeHomePage from './home'; 
 import makeMenuPage from './menu';
+import './style.css';
 
 const content = document.querySelector('#content');
 // make navbar function
